@@ -30,9 +30,7 @@ let package = Package(
    targets: [
       .target(
          name: "Retry",
-         dependencies: [
-            .product(name: "Logging", package: "swift-log"),
-         ]
+         dependencies: [.product(name: "Logging", package: "swift-log"),]
       ),
       .testTarget(
          name: "RetryTests",
